@@ -1,0 +1,57 @@
+* {
+    marjin: 0 ;
+    padding: 0;
+}
+nav{
+    background-color: blueviolet;
+    border: 1px solid blue;
+    color: orange;
+    height: 220px;
+    padding: 0 5px;
+}
+
+.sec01{
+    border: 1px solid salmon;
+}
+
+.sec01 h1{
+    color: blue;
+}
+
+.sec01 h3{
+    font-family: 'Courier New', Courier, monospace ;
+    color: red;
+}
+
+.atc01{
+    border: 2px dotted greenyellow;
+    font-size: 2rem;
+    color: blueviolet;
+    background-image: url(AP3-5.jpg);
+}
+
+.atc02{
+    border: 2px dotted greenyellow;
+    font-size: 2rem;
+    color: blueviolet;
+    background-image: url(AP3-5.jpg);
+}
+
+ul.menu{
+    display: flex;
+    color: chocolate;
+    text-decoration: none;
+}
+
+ul.menu a{
+    text-decoration: none;
+}
+
+.aside01{
+    border: 3px solid blue;
+    float: right;
+    background-color: beige;
+}
+.ft01{
+    margin: 10rem;
+}
