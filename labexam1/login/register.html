@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <link rel="stylesheet" href="rg.css">
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form">
+            <h2>สมัครสมาชิกผู้ใช้งาน</h2>
+            
+            <section>
+                <h3>ข้อมูลส่วนตัว</h3>
+                <label for="username">ชื่อผู้ใช้:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="lastname">ชื่อ-นามสกุล:</label>
+                <input type="text" id="lastname" name="lastname" required>
+
+                <label for="phone">เบอร์โทร:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">อีเมล์:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" required>
+            </section>
+
+            <section>
+                <h3>ที่อยู่ปัจจุบัน</h3>
+                <label for="address">บ้านเลขที่:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="province">จังหวัด:</label>
+                <select id="province" name="province" required>
+                    <option value="">เลือกจังหวัด</option>
+                    <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                    <option value="เชียงใหม่">เชียงใหม่</option>
+                    <option value="ชลบุรี">ชลบุรี</option>
+                    <option value="ภูเก็ต">ภูเก็ต</option>
+                    <!-- เพิ่มจังหวัดอื่น ๆ ตามต้องการ -->
+                </select>
+
+                <label for="district">อำเภอ:</label>
+                <select id="district" name="district" required>
+                    <option value="">เลือกอำเภอ</option>
+                    <option value="เมือง">เมือง</option>
+                    <option value="ดอยตุง">ดอยตุง</option>
+                    <option value="พัทยา">พัทยา</option>
+                    <option value="น้อยหน่า">น้อยหน่า</option>
+                </select>
+
+                <label for="postalcode">รหัสไปรษณีย์:</label>
+                <input type="text" id="postalcode" name="postalcode" required>
+
+                <label for="address-details">รายละเอียดที่อยู่:</label>
+                <input type="text" id="address-details" name="address-details" required>
+            </section>
+
+            <section>
+                <label for="profile-pic">อัพโหลดรูปโปรไฟล์:</label>
+                <input type="file" id="profile-pic" name="profile-pic">
+            </section>
+
+            <div class="form-actions">
+                <button type="submit">สมัครสมาชิก</button>
+                <button type="reset">ยกเลิก</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

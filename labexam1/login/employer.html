@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบผู้ใช้ทั่วไป</title>
+    <link rel="stylesheet" href="ep.css">
+    <script>
+
+        const correctUsername = "opal";
+        const correctPassword = "opal2547";
+
+        function validateForm(event) {
+            event.preventDefault(); 
+
+            const enteredUsername = document.getElementById("username").value;
+            const enteredPassword = document.getElementById("password").value;
+
+
+            if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
+                alert("เข้าสู่ระบบสำเร็จ!");
+                window.location.href = "home.html"; 
+            } else {
+                alert("ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง");
+                window.location.href = "error.html"; 
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2>เข้าสู่ระบบผู้ใช้ทั่วไป</h2>
+    <img src="03.png" alt="User Icon">
+    <form onsubmit="validateForm(event)">
+        <label for="username">ชื่อผู้ใช้:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">รหัสผ่าน:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">เข้าสู่ระบบ</button>
+        <a href="register.html">ลงทะเบียน</a>
+    </form>
+</div>
+
+</body>
+</html>
+
