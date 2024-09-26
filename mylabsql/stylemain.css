@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(op.jpg);
+    background-size: cover; /* ขยายพื้นหลังให้เต็มหน้าจอ */
+    background-position: center; /* จัดตำแหน่งพื้นหลังให้อยู่กลาง */
+    background-repeat: no-repeat; /* ไม่ให้พื้นหลังซ้ำ */
+    color: #5e4b8c; /* สีข้อความม่วงเข้ม */
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.member, .movie, .actor {
+    background-color: #e8b3d1; /* โทนชมพูม่วงพลาสเทล */
+    color: #5e4b8c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: transform 0.2s, background-color 0.4s;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member:hover {
+    background-color: #d6a6c1; /* สีเมื่อ hover */
+    transform: translateY(-5px);
+    color: #ffffff; /* สีข้อความเมื่อ hover */
+}
+
+.movie {
+    background-color: #e5c1e1; /* สีโทนชมพูม่วงพลาสเทล */
+}
+
+.movie:hover {
+    background-color: #f7e1f2; /* สีเมื่อ hover */
+    transform: translateY(-5px);
+    color: #5e4b8c; /* สีข้อความเมื่อ hover */
+}
+
+.actor {
+    background-color: #baf0f0; /* สีโทนชมพูม่วงพลาสเทล */
+}
+
+.actor:hover {
+    background-color: #f3d3e5; /* สีเมื่อ hover */
+    transform: translateY(-5px);
+    color: #5e4b8c; /* สีข้อความเมื่อ hover */
+}
